@@ -4,9 +4,9 @@ services:
   discount-api:
     build: ../supermarket.discount.api
     ports:
-      - 50052:50051
+      - 50052:50052
     environment: 
-      MICRO_SERVER_ADDRESS: ":50051"
+      MICRO_SERVER_ADDRESS: ":50052"
 
   product-api:
     build: ../supermarket.products.api
