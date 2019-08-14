@@ -14,6 +14,9 @@ services:
       - 50051:50051
     environment:
       MICRO_SERVER_ADDRESS: ":50051"
+      CORS_ALLOWED_HEADERS: "X-Custom-Header"
+      CORS_ALLOWED_ORIGINS: "*"
+      CORS_ALLOWED_METHODS: "POST"
   
   gateway-api:
     image: microhq/micro
